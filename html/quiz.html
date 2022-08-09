@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Sir Cheesecake Steak</title>
+
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <link href="/styles.css" rel="stylesheet">
+
+        <script src="/scripts.js"></script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>
+                <a href="#" class = "effect-shine">SIR CHEESECAKE STEAK</a>
+            </h1>
+
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">S C S</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse navbar-toggleable-xs" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vanity.html">Vanity</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Take the quiz<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item" onclick="commencePopup(this)">
+                            <a class="nav-link disabled" href="society.html" id="society">Join the <i>SCS</i> society</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="box">
+            <div class="about quiz">
+                <div class="panel-group" id="accordionOne">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" id="headingOne">
+                                <a data-toggle="collapse" data-parent="#accordionOne" href="#collapseOne">
+                                    The Journey
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div id="collapseOne" class="panel-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionOne">
+                            <div class="panel-body">
+                                <p>
+                                    I presume that you have dared to venture on this page with the knowledge that is required. There are several principles I must bestow upon
+                                    you if we are to continue to embark on this journey.
+                                </p>
+                                <p>
+                                    Firstly, the importance of <strong>wider reading</strong>. If you feel uncomfortable on the subject of the Lancastrians, Yorkists or Tudors, I would highly suggest
+                                    taking a moment or two, a pen and quill or two, and engaging with the subject matter listed below. Remember, this is for your benefit.
+                                </p>
+                                <ul>
+                                    <li>
+                                            <a href="https://www.youtube.com/watch?v=rZo_Gn-GqZs" target="_blank">The War of the Roses</a>
+                                    </li>
+                                    <li>
+                                            <a href="https://www.youtube.com/watch?v=XL2se6BzIHk" target="_blank">Richard III</a>
+                                    </li>
+                                    <li>
+                                            <a href="https://www.youtube.com/watch?v=8D4CETT2tvs" target="_blank">Henry VII</a>
+                                    </li>
+                                 </ul>
+                                <p>
+                                    Secondly, and perhaps most importantly, you must have the <strong>desire</strong> within you to succeed followed by a <strong>passion</strong> for the Sir Cheesecakians. This quiz is no
+                                    walk in the park, but with dedicated time and effort, I hope that you will come to cherish its brilliance.
+                                </p>
+                                <p>
+                                    I wish you good luck.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+     <!-- Start page -->
+    <div class="about quiz">
+        <div class="panel-group" id="accordionTwo">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title" id="headingTwo">
+                        <a data-toggle="collapse" data-parent="#accordionTwo" href="#collapseTwo" onclick="accordionOpened(this)">
+                            The Quiz
+                        </a>
+                    </h3>
+                </div>
+            </div>
+
+            <div id="collapseTwo" class="panel-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionTwo">
+                <div class="panel-body">
+                    <div id="start">
+                        <h4>Are you ready for the quiz?</h4>
+                        <div class="box">
+                            <button type="button" id="ready" onclick="buttonClicked(this)"> Yes!</button>
+                        </div>
+                    </div>
+
+                    <!-- First question -->
+                    <div id="Q1">
+                        <h4> Question 1: At what battle did I beat the vulgar Richard III?</h4>
+                        <hr>
+                        <div class="box">
+                            <button type="button" onclick="buttonClicked(this)" id="Q1a"> A) the Battle of Bosworth</button>
+                            <button type="button" onclick="buttonClicked(this)" id="Q1b"> B) the Battle of Blore Heath</button>
+                            <button type="button" onclick="buttonClicked(this)" id="Q1c"> C) the Battle of Northhampton</button>
+                        </div>
+                    </div>
+
+                    <div id="Q2">
+                        <h4> Question 2: Which divine marriage alliance was I able to secure?</h4>
+                        <hr>
+                        <div class="box">
+                            <button type="button" onclick="buttonClicked(this)" id="Q2a">
+                                A) The marriage of my daughter, Margaret Tudor, to the scottish King James IV.
+                            </button>
+                            <button type="button" onclick="buttonClicked(this)" id="Q2b">
+                                B) The Spanish Marriage, my eldest son Henry betrothed to the prim Katherine of Aragon.
+                            </button>
+                            <button type="button" onclick="buttonClicked(this)" id="Q2c">
+                                C) My own marriage to the dashing Elizabeth of Anjou.
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="Q3">
+                        <h4> Question 3: Why was I a respected King?</h4>
+                        <hr>
+                        <div class="box">
+                            <button type="button" onclick="buttonClicked(this)" id="Q3a">
+                                A) Because of my military prowess; I restored the common people's pride in the country, ever so essential after the humilations of the
+                                                    War of the Roses.
+                            </button>
+                            <button type="button" onclick="buttonClicked(this)" id="Q3b">
+                                B) I was rather well acquainted with the nobility, lavish with land grants. Being a former magnate myself, I understood the importance
+                                                    of keeping the nobility on your side.
+                            </button>
+                            <button type="button" onclick="buttonClicked(this)" id="Q3c">
+                                C) I was a harsh King and frugal with money, a quality which would restore the authority of the monarch and set the foundations for the beloved Tudor dynasty.
+                            </button>
+                            <button type="button" onclick="buttonClicked(this)" id="Q3d">
+                                D) Anyone would have been respected coming after Richard III; infamous for the murder of his nephews. I wasn't perfect but I was good enough.
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="finish">
+                        <h4> Thank you for completing the quiz!</h4>
+                        <hr>
+                        <div class="box">
+                            <!-- Tell user their faults -->
+                            <div class="about">
+                                <p class="info" id="Q1aInfo">
+                                    Q1: On the doorstep of question one, you answered that the Battle of Bosworth was the one in which I slayed the wretched Richard III. Fortunately,
+                                    you were correct. This battle occurred on the 22nd of August, in the fateful year of 1485. Of course, you would have known this, as you likely googled
+                                    the answer. My win was narrow; Richard was a far better soldier than I. It was only due to the generosity of the French - no doubt wanting to stir
+                                    trouble - and <i>most importantly</i>, Sir William Stanley, who both supplied me with the troops I needed for a decisive victory.
+                                </p>
+                                <p class="info" id="Q1bInfo">
+                                    Q1: On the doorstep of question one, you answered that the Battle of Bosworth was the one in which I slayed the wretched Richard III. Fortunately,
+                                    you were correct. This battle occurred on the 22nd of August, in the fateful year of 1485. Of course, you would have known this, as you likely googled
+                                    the answer. My win was narrow, Richard was a far better soldier than I. It was only due to the generosity of the French - no doubt wanting to stir
+                                    trouble - and <i>most importantly</i>, Sir William Stanley, who both supplied me with the troops I needed for a decisive victory.
+                                </p>
+                                <p class="info" id="Q1cInfo">
+                                    Q1: On the doorstep of question one, you answered that the Battle of Bosworth was the one in which I slayed the wretched Richard III. Fortunately,
+                                    you were correct. This battle occurred on the 22nd of August, in the fateful year of 1485. Of course, you would have known this, as you likely googled
+                                    the answer. My win was narrow, Richard was a far better soldier than I. It was only due to the generosity of the French - no doubt wanting to stir
+                                    trouble - and <i>most importantly</i>, Sir William Stanley, who both supplied me with the troops I needed for a decisive victory.
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="about">
+                                <p class="info" id="Q2aInfo">
+                                    Q2: On hearing the second question, you answered that the divine marriage alliance I was able to secure was between my daughter, Margaret Tudor, and the scottish King James IV.
+                                    You were <strong>correct</strong>. It was this very marriage which allowed my great great-grandson, James VI, to take the throne in 1603 and finally unite the two crowns.
+                                </p>
+                                <p class="info" id="Q2bInfo">
+                                    Q2: On hearing the second question, you answered that the divine marriage alliance I was able to secure was between my son, Henry, and the Spanish princess, the Katherine of Aragon.
+                                    You were <strong>incorrect</strong>. I regret to say that you were very close to a correct answer, but initially, it was my eldest son <i>Arthur</i> who would be betrothed to Katherine.
+                                    It was only upon Arthur's far too early death that Henry, and I mean soon-to-be Henry VIII, would encroach on his wife. Funnily enough, Henry had to seek
+                                    papal dispensation from the pope as it was seen rather immoral to marry your brother's wife, dead or not.
+                                </p>
+                                <p class="info" id="Q2cInfo">
+                                    Q2: On hearing the second question, you answered that the divine marriage alliance I was able to secure was between myself and my splendid wife, Elizabeth of Anjou.
+                                    I regret to inform that you were <strong>incorrect</strong>, and that I was actually married to the Elizabeth of <i>York</i>. I was able to use this marriage for my own
+                                    propaganda, claiming to be uniting the two previously aggravated families, the Yorkists, and the Lancastrians, I myself having a weak link to the Lancastrian dynasty.
+                                    That is where the Tudor rose comes into play, symbolising this union.
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="about">
+                                <p class="info" id="Q3aInfo">
+                                    Q3: This question was, as you might have thought, rather vague. What made me respected? This is a question which could be argued to great length
+                                    by any scholar of late medieval history for many moons. The answer you gave was, however, largely <strong>incorrect</strong>, as Henry VI
+                                    was able to secure no real military victories, despite some effort. After the perils of the Wars of the Roses, the country wanted peace. Any effort
+                                    to rally tax for war - on Scotland or France or the like - was strongly rejected, with tax rebellions in Yorkshire and in Cornwall.
+                                </p>
+                                <p class="info" id="Q3bInfo">
+                                    Q3: This question was, as you might have thought, rather vague. What made me respected? This is a question which could be argued to great length
+                                    by any scholar of late medieval history for many moons. The answer you gave was, however, largely <strong>incorrect</strong>, as Henry VI
+                                    was able to secure no real military victories, despite some effort. After the perils of the Wars of the Roses, the country wanted peace. Any effort
+                                    to rally tax for war - on Scotland or France or the like - was strongly rejected, with tax rebellions in Yorkshire and in Cornwall.
+                                </p>
+                                <p class="info" id="Q3cInfo">
+                                    Q3: This question was, as you might have thought, rather vague. What made me respected? This is a question which could be argued to great length
+                                    by any scholar of late medieval history for many moons. The answer you gave was, however, largely <strong>incorrect</strong>, as Henry VI
+                                    was able to secure no real military victories, despite some effort. After the perils of the Wars of the Roses, the country wanted peace. Any effort
+                                    to rally tax for war - on Scotland or France or the like - was strongly rejected, with tax rebellions in Yorkshire and in Cornwall.
+                                </p>
+                                <p class="info" id="Q3dInfo">
+                                    Q3: This question was, as you might have thought, rather vague. What made me respected? This is a question which could be argued to great length
+                                    by any scholar of late medieval history for many moons. The answer you gave was, however, largely <strong>incorrect</strong>, as Henry VI
+                                    was able to secure no real military victories, despite some effort. After the perils of the Wars of the Roses, the country wanted peace. Any effort
+                                    to rally tax for war - on Scotland or France or the like - was strongly rejected, with tax rebellions in Yorkshire and in Cornwall.
+                                </p>
+                            </div>
+                                <p class="info" id="unlock-society">
+                                    Hmm... Looks like the society has opened up its doors for you.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade in out" tabindex="1" role="dialog" id="societyPopup">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Access to the <strong>society</strong>&trade; declined.</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>I am afraid the society does not see you fit to join their ranks. Perhaps you should attempt the quiz first.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
