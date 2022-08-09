@@ -1,0 +1,224 @@
+/* All pages */
+
+.header {
+    background-color: #023e46;
+    color: #d9bd7c;
+
+    margin-bottom: 1rem;
+    padding: 2rem 1rem 2rem 1rem;
+    text-align: center;
+    overflow: visible;
+}
+
+h1 a,
+h1 a:hover {
+    font-size: 7.5vw;
+    font-family: , serif;
+    letter-spacing: 6px;
+    text-decoration: none;
+    color: #d9bd7c;
+    text-shadow: -10px 5px 10px #081B2D;
+
+    outline: 10px solid transparent;
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+    from { -webkit-mask-position: 150%; }
+    to { -webkit-mask-position: -50%; }
+}
+
+.navbar-dark {
+    background-color: #023e46;
+    box-shadow: -10px 5px 10px #04323d;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .navbar-brand:focus {
+    font-size: 22px;
+    color: #d9bd7c;
+
+    margin-left: 1rem;
+    font-weight: bold;
+
+    text-shadow: -10px 5px 10px #081B2D;
+}
+
+.navbar-dark .navbar-brand:hover {
+    outline: 10px solid transparent;
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s linear infinite;
+}
+
+.navbar-dark .nav-item {
+    color: #6c9ea1;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
+
+.navbar-dark .nav-item.active .nav-link{
+    color: #d9bd7c;
+}
+
+a {
+    color: #6c9ea1;
+
+    .active {
+        color: #d9bd7c;
+    }
+}
+a:hover {
+    color: #abdbd4;
+    text-decoration:
+}
+
+
+body {
+    background-color: #174d54;
+}
+
+img {
+    border: 5px solid #d9bd7c;
+    border-image-width: 5px;
+    box-shadow: -10px 5px 10px #0c3841;
+}
+
+.about {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+
+    box-shadow: -10px 5px 10px #05303a;
+    color: #d9bd7c;
+    padding: 0.5rem 2rem;
+    margin-bottom: auto;
+}
+
+@media (max-width: 600px) {
+    .about {
+        font-size: 16px;
+    }
+}
+
+.modal-content {
+    background-color: #174d54;
+    color: #d9bd7c;
+}
+
+.modal-header {
+    background-color: #023e46;
+    border-bottom: 1px solid #426e74;
+}
+
+.modal-header .close, .modal-header .close:hover, .modal-header .close:focus {
+    color: #d9bd7c;
+    opacity: 1;
+    text-shadow: 0 1px 0 #05303a;
+    outline: 0;
+}
+
+.modal-body {
+    background-color: #174d54;
+}
+
+/* vanity.html */
+.about.centred {
+    text-align: center;
+}
+
+/* quiz.html */
+.about.quiz {
+    width: 96vw;
+}
+
+.box > button {
+    border: 3px solid #d9bd7c;
+    box-shadow: -10px 5px 10px #0c3841;
+    margin: 1em;
+    position: relative;
+    background-color: #023e46;
+    color: #d9bd7c;
+}
+
+.box > button:hover,
+.box > button:focus {
+    outline: 10px solid transparent;
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s linear infinite;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 25px;
+}
+
+#Q1, #Q2, #Q3, #finish, .info {
+    display: none;
+}
+
+/* images */
+#past {
+    max-width: 80%;
+}
+
+#present {
+    max-width: 50%;
+}
+
+@media (max-width: 600px) {
+    #past {
+        max-width: 90%;
+    }
+    #present {
+        max-width: 90%;
+    }
+}
+
+#portrait {
+    width: 250px;
+    height: 344px;
+}
+
+#cheesecake {
+    width: 250px;
+    height: 250px;
+}
+
+#steak {
+    width: 312.5px;
+    height: 207.5px;
+}
+
+#portrait1 {
+    width: 250px;
+    height: 344px;
+}
+
+#portrait2 {
+    width: 263px;
+    height: 347px;
+}
+
+
+#portrait3 {
+    width: 248.5px;
+    height: 344px;
+}
+
+#elizPortrait {
+    width: 271px;
+    height: 384px;
+}
+
+#HenryVIII {
+    width: 350px;
+    height: 350px;
+}
