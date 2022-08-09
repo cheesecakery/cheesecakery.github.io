@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="styles.css" rel="stylesheet">
+
+        <title>Sir Cheesecake Steak</title>
+
+        <script src="scripts.js"></script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>
+                <a href="#" class = "effect-shine">SIR CHEESECAKE STEAK</a>
+            </h1>
+
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">S C S</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                <div class="collapse navbar-collapse navbar-toggleable-xs" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="html/vanity.html">Vanity</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="html/quiz.html">Take the quiz</a>
+                      </li>
+                      <li class="nav-item"  onclick="commencePopup(this)">
+                        <a class="nav-link disabled" href="html/society.html" id="society">Join the <i>SCS</i> society</a>
+                      </li>
+                    </ul>
+                  </div>
+            </nav>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img id="portrait" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Enrique_VII_de_Inglaterra%2C_por_un_artista_an%C3%B3nimo.jpg" alt="Henry VII">
+          </div>
+
+            <div class="about" id="past">
+                <h2>Where my journey on this splendid earth didst begin -- About the man behind the myth. Find what you seek here!</h2>
+                <hr>
+                <p>
+                    I was once a King. I hope that is clear once one peers upon my supple fingers and velvet-born hat. I am not a King anymore.
+                    I had to retire. To look after the children and the wife, you know. Being a King is a very stressful job. Power is a stressful
+                    concept. I don't think we are really built to deal with power. That's why a lot of us crumble. You either lose your morals or your
+                    mind. Or really, I suppose, you lose both. My predecessor - Richard III. He killed his nephews. Sorry, <i>allegedly</i> killed his
+                    nephews. That is what power does to a man's mind.
+                </p>
+            </div>
+
+            <div class="about" id="present">
+                <h2>Where I reside now</h2>
+                <hr>
+                <p>
+                    Now, I am Sir Cheesecake Steak. Whilst no longer adorning the title of King, I feel much more proud of my current title. It feels as though, for once, I can let free the chains of
+                    others' expectations and finally feel free within my own skin. No pressures like petitions or the like. No constant eye peering over my shoulder -- for my safety, no doubt, but none
+                    the less an eyesore -- and no more need for majestic appearance. I usurped the kingdom through slaying Richard III, himself a feared usurper. And in my resignation, I hope to
+                    put this whole 'usurpation' mess to bed.
+                </p>
+            </div>
+            <img id="cheesecake" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2022%2F07%2F05%2F8350-chantals-new-york-ddmfs-cheesecake-1x1-314.jpg" alt="Cheesecake">
+            <img id="steak" src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_center,w_730,h_487/k%2Farchive%2F2816f86937ebc7019a513d858cec8e0c55d38890" alt="Steak">
+        </div>
+
+        <div class="modal fade in out" tabindex="1" role="dialog" id="societyPopup">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Access to the <strong>society</strong>&trade; declined.</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>I am afraid the society does not see you fit to join their ranks. Perhaps you should attempt the quiz first.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
