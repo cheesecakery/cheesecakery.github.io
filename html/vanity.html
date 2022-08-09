@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Sir Cheesecake Steak</title>
+
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <link href="/styles.css" rel="stylesheet">
+        <script src="/scripts.js"></script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>
+                <a href="#" class = "effect-shine">SIR CHEESECAKE STEAK</a>
+            </h1>
+
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">S C S</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse navbar-toggleable-xs" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Vanity<span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="quiz.html">Take the quiz</a>
+                      </li>
+                      <li class="nav-item" onclick="commencePopup(this)">
+                        <a class="nav-link disabled" href="society.html">Join the <i>SCS</i> society</a>
+                      </li>
+                    </ul>
+                  </div>
+            </nav>
+          </div>
+
+            <div class="about centred">
+                <h4>Allow me this much self-adoration at the very least! I despair I have little else to adore nowadays...</h4>
+            </div>
+
+          <div class="box">
+            <img id="portrait1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Enrique_VII_de_Inglaterra%2C_por_un_artista_an%C3%B3nimo.jpg/640px-Enrique_VII_de_Inglaterra%2C_por_un_artista_an%C3%B3nimo.jpg" alt="portrait">
+            <img id="portrait2" src="https://www.rmg.co.uk/sites/default/files/styles/max_width_1440/public/Untitled-2.jpg" alt="portrait">
+            <img id="portrait3" src="https://www.westminster-abbey.org/media/9931/henry-vii-colour-drawing.jpg?center=0.344578313253012,0.41&mode=crop&width=1200&rnd=132089724300000000" alt="portrait">
+          </div>
+
+          <hr>
+
+          <div class="about centred">
+              <h4>And feast your eyes upon my adoring wife, Elizabeth of York -- respectfully of course! That <i>is</i> my wife you do hawk at.</h4>
+          </div>
+
+          <div class="box">
+            <img id="elizPortrait" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/British_School%2C_16th_century_-_Elizabeth_of_York_-_Haunted_Gallery%2C_Hampton_Court_Palace.jpg" alt="Elizabeth Of York (Wife of HVII)">
+          </div>
+
+          <hr>
+
+          <div class="about centred">
+              <h4>My son, oh my son. A controversial figure, but nonetheless one who does shine bright amongst our decrepit royalty.</h4>
+          </div>
+
+          <div class="box">
+            <img id="HenryVIII" src="https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY5NDkwOTI4MzM0MDIxOTIx/henry-viii-gettyimages-164081255.jpg" alt="Henry VIII (son of Henry VII)">
+          </div>
+
+          <div class="modal fade in out" tabindex="1" role="dialog" id="societyPopup">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Access to the <strong>society</strong>&trade; declined.</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>I am afraid the society does not see you fit to join their ranks. Perhaps you should attempt the quiz first.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </body>
+</html>
